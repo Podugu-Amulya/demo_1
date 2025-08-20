@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Mini Site</title>
+<style>
+  body{margin:0;font:16px system-ui,Segoe UI,Roboto,sans-serif;background:#0f172a;color:#e5e7eb}
+  header,footer{padding:12px 16px;text-align:center}
+  nav a{margin:0 8px;color:#a8b3cf;text-decoration:none}
+  main{max-width:900px;margin:auto;padding:24px 16px}
+  .card{border:1px solid #243049;border-radius:12px;padding:14px;margin:12px 0;background:#111827}
+  .btn{display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid #243049}
+  input{padding:8px;border-radius:8px;border:1px solid #243049;background:#0b1220;color:#e5e7eb}
+</style>
+</head>
+<body>
+<header><strong>MySite</strong> · <nav><a href="#about">About</a><a href="#features">Features</a><a href="#contact">Contact</a></nav></header>
+<main>
+  <section id="about" class="card"><h2>About</h2><p>One small file website.</p></section>
+  <section id="features" class="card"><h2>Features</h2><ul><li>Fast</li><li>Responsive</li><li>Easy</li></ul></section>
+  <section id="contact" class="card"><h2>Contact</h2>
+    <form onsubmit="event.preventDefault();alert('Thanks!')">
+      <input type="email" placeholder="Email" required> <button class="btn">Send</button>
+    </form>
+  </section>
+</main>
+<footer>© <span id="y"></span></footer>
+<script>y.textContent=new Date().getFullYear();</script>
+</body>
+</html>
+
